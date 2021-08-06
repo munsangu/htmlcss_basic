@@ -1,0 +1,28 @@
+.logo {
+  display: block;
+  margin: auto auto;
+  width: 165px;
+  height: 58px;
+  margin-top: 80px;
+}
+
+.link {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.link a {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #58595B;
+}
+
+.photo {
+  display: block;
+  margin: auto auto;
+  width: 90%;
+}
