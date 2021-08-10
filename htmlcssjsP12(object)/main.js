@@ -217,3 +217,50 @@ for(let i = 0 ; i < teams.length ; i++){
 
 console.log(teams[0]);
 console.log(teams[1]);
+console.log("")
+// 거스름돈 구하기(지폐)
+function calculateChange(payment, cost) {
+  let change = payment - cost; // 거스름돈 총액
+
+  function billCounting(amount) {
+    const count = Math.floor(change / amount);
+    change = change - amount * count;
+    return count;
+  }
+
+  const fiftyCount = billCounting(50000);
+  const tenCount = billCounting(10000);
+  const fiveCount = billCounting(5000);
+  const oneCount = billCounting(1000);
+
+  console.log(`50000원 지폐: ${fiftyCount}장`);
+  console.log(`10000원 지폐: ${tenCount}장`);
+  console.log(`5000원 지폐: ${fiveCount}장`);
+  console.log(`1000원 지폐: ${oneCount}장`);
+}
+
+calculateChange(100000, 33000);
+console.log('');
+calculateChange(500000, 378000);
+console.log('');
+
+// 팰린드롬
+function isPalindrome(word) {
+
+let reverse_word = ""
+for(let i = word.length - 1 ; i >=0 ; i--){
+  reverse_word = reverse_word + word[i]
+}
+if(word === reverse_word) {
+  return true
+} else {
+  return false
+}
+}
+
+console.log(isPalindrome("racecar"));
+console.log(isPalindrome("stars"));
+console.log(isPalindrome("기러기"));
+console.log(isPalindrome("123321"));
+console.log(isPalindrome("hello"));
+console.log(isPalindrome("kayak"));
